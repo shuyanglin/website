@@ -1,13 +1,13 @@
-import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import { getAbout } from "@/sanity/sanity-utils";
+import { getAbout } from "../../../sanity/sanity-utils";
 import { PortableText } from "next-sanity";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
-const About = async () => {
+export default async function About() {
   const about = await getAbout();
-  console.log("about:");
-  console.log({ about });
   return (
     <>
       <Typography variant="h3">About</Typography>
@@ -34,6 +34,4 @@ const About = async () => {
       </Grid>
     </>
   );
-};
-
-export default About;
+}

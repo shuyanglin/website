@@ -6,7 +6,8 @@ import theme from "@/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import { Box, Container } from "@mui/material";
-import Navigation from "./components/Navigation/page";
+import Navigation from "../components/Navigation";
+// import Navigation from "../components/Navigation";
 
 export const metadata: Metadata = {
   title: "Shu Yang Lin || Personal Website",
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <meta name="viewport" content="initial-scale=1, width=device-width" /> */}
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
       <body>
         <AppRouterCacheProvider options={{ key: "css" }}>

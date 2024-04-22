@@ -1,9 +1,9 @@
-import { Project } from "@/app/(site)/types/Project";
-import { About } from "@/app/(site)/types/About";
-import { Calendar } from "@/app/(site)/types/Calendar";
+import { Project } from "@/app/types/Project";
+import { About } from "@/app/types/About";
+import { Calendar } from "@/app/types/Calendar";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
-import { Organisation } from "@/app/(site)/types/Organisation";
+import { Organisation } from "@/app/types/Organisation";
 const client = createClient(clientConfig);
 
 export async function getProjects(): Promise<Project[]> {

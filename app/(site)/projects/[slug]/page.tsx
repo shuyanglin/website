@@ -14,10 +14,8 @@ const client = createClient(clientConfig);
 
 const Project = async ({ params }: Props) => {
   const slug = params.slug;
-
   const project = await getProject(slug);
-  console.log("project:");
-  console.log({ project });
+
   const SampleImageComponent = ({
     value,
     isInline,

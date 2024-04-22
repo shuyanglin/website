@@ -23,4 +23,5 @@ export default defineConfig({
     }),
   ],
   schema: { types: [project, about, calendar, organisation] },
+  useCdn: true,
 });
